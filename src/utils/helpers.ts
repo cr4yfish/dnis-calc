@@ -21,7 +21,7 @@ export function formatBinary(str: string): string {
 
   // 2. Use a regular expression to insert dots every 4 digits from the right
   const reversedStr = cleanedStr.split('').reverse().join('');
-  const formattedReversedStr = reversedStr.replace(/(\d{8})(?=\d)/g, '$1.');
+  const formattedReversedStr = reversedStr.replace(/(\d{4})(?=\d)/g, '$1.');
   const formattedStr = formattedReversedStr.split('').reverse().join('');
 
   return formattedStr;
