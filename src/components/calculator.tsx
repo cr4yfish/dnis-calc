@@ -19,10 +19,10 @@ type CalcFieldProps = {
 export const CalcField = (props: CalcFieldProps) => {
 
     return (
-        <div>
-            <Label className="text-lg">{props.label}</Label>
+        <div className="w-full flex flex-col px-4 items-center justify-center max-w-xl">
+            <Label className="text-lg w-full text-start">{props.label}</Label>
             <Textarea 
-                className="w-1/3 min-w-md resize-none mt-2"
+                className="w-full resize-none"
                 value={props.value}
                 onChange={(e) => {
                     let value = e.target.value;
