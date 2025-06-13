@@ -1,11 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "./ui/textarea";
-import { formatBinary, formatBinaryAsIPAddress, formatHex, formatNumberInDigitGroups } from "@/utils/helpers";
+import { formatBinary, formatHex} from "@/utils/helpers";
 
 type Cat = "dec" | "bin" | "hex";
 
@@ -58,7 +56,7 @@ export const CalcField = (props: CalcFieldProps) => {
                             break;
 
                     }
-                    
+
                 }}
                 placeholder={props.label}
             />
